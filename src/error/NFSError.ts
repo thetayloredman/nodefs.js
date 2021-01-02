@@ -1,4 +1,4 @@
-/**
+/*
  * nodefs.js -- Node.js filesystem library
  * Copyright (C) 2020  BadBoyHaloCat
  *
