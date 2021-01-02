@@ -1,0 +1,50 @@
+{
+    "name": "nodefs.js",
+    "version": "0.0.0",
+    "description": "Node.js filesystem library",
+    "main": "dist/index.js",
+    "scripts": {
+        "test": "echo \"No test specified\"",
+        "build": "rm -rfv dist && tsc",
+        "prepublishOnly": "yarn build",
+        "doc": "typedoc ./src/",
+        "format": "prettier . -w"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/thetayloredman/nodefs.js.git"
+    },
+    "keywords": [
+        "fs",
+        "library",
+        "wrapper"
+    ],
+    "author": "BadBoyHaloCat",
+    "license": "GPL-3.0",
+    "bugs": {
+        "url": "https://github.com/thetayloredman/nodefs.js/issues"
+    },
+    "homepage": "https://github.com/thetayloredman/nodefs.js#readme",
+    "devDependencies": {
+        "husky": "^4.3.6",
+        "lint-staged": "^10.5.3",
+        "np": "^7.0.0",
+        "prettier": "^2.2.1",
+        "typedoc": "^0.19.2",
+        "typescript": "^4.1.3"
+    },
+    "dependencies": {},
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*": [
+            "prettier -w"
+        ],
+        "**/*": [
+            "prettier -w"
+        ]
+    }
+}

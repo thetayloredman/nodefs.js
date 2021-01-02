@@ -1,0 +1,7 @@
+/docs/
+/dist/
+/.gitignore
+/.gitattributes
+/.prettierignore
+/.npmignore
+/yarn.lock
